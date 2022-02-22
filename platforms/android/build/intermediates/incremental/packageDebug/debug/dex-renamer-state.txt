@@ -1,0 +1,4 @@
+#Tue Feb 15 16:10:16 CST 2022
+base.0=E\:\\sample\\cordove-App\\platforms\\android\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=E\:\\sample\\cordove-App\\platforms\\android\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
