@@ -1,0 +1,111 @@
+.clock {
+    display: inline-flex;
+    width: 100%;
+    position: absolute;
+    top: 39%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    display: inline-flex;
+    width: 6.3rem;
+    height: 6.2rem;
+}
+
+
+
+
+.card-second, .card-hour, .card-minute {
+    position: relative;
+    /* width: 50px; */
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+    perspective-origin: left;
+    /* padding-bottom: 110px; */
+    perspective: 300px;
+    -webkit-perspective: 300px;
+    /* Safari and Chrome */
+}
+
+.card-content, .card-content-minute, .card-content-hour {
+    font-size: 4.7rem;
+    height: 3rem;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 4px;
+    font-family: inherit;
+    color: #fff;
+    background-color: black;
+}
+
+.card-top, .card-top-minute, .card-top-hour {
+    /* color: green; */
+    position: absolute;
+    transform-origin: bottom;
+    z-index: 4;
+}
+
+.card-innertop, .card-innertop-minute, .card-innertop-hour {
+    /* color: orange; */
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card-bottom, .card-bottom-minute, .card-bottom-hour {
+    z-index: 3;
+    /* color: red; */
+    line-height: 0;
+    position: absolute;
+    top: 3rem;
+}
+
+.flapping {
+    transform: rotate(0.5turn) rotateY(180deg);
+    -webkit-transform: rotate(0.5turn) rotateY(180deg);
+    transform-origin: center;
+}
+
+.rotate {
+    animation-name: 'overturn-first';
+    -webkit-animation-name: 'overturn-first';
+
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.rotate-minute, .rotate-hour {
+    animation-name: 'overturn-first';
+    -webkit-animation-name: 'overturn-first';
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes overturn-first {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateX(-180deg);
+    }
+}
+
+p{
+    margin: 0;
+    display: inline-block;
+    height: 6rem;
+    padding-top: 2.5rem;
+}

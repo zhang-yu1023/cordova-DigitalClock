@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "简易时钟",
+  "short_name": "简易时钟",
+  "version": "io.cordova.hellocordova",
+  "description": "Sample Apache Cordova App",
+  "author": "Apache Cordova Team",
+  "icons": [],
+  "start_url": "index.html"
+}
